@@ -1,81 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <title>Bootstrap Basic Portfolio</title>
+
+  <!-- Boostrap Stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <!-- Our own CSS stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css" media="screen" />
 </head>
+
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-sm-12">
-                <button type="button" class="btn btn-dark btn-lg">Kilea Castillo</button>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <a class="navbar-brand" href="index.html" id="logo">Kilea Castillo</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">About</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+  <!-- End of navbar -->
+
+  <!-- Start of container -->
+  <div class="container">
+    <main class="row">
+      <div class="col-md-8">
+        <article class="block">
+          <h1 class="block-header">Portfolio</h1>
+          <hr />
+          <div class="row">
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <a href="https://norwayflames.github.io/Word_Guess_Game/">
+              <img class="work"  src="assets/imgs/words.jpeg"
+                alt="Word Guess"></a> 
+              <h3>Word Guess</h3>
             </div>
-            <div class="col-lg-9 col-sm-12">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="portfolio.html">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+            <br>
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <img class="work" src="assets/imgs/code.jpg" alt="RPG Game" />
+              <h3>RPG Game</h3>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 col-sm-12">
-                <img src="assets/images/code.jpg" class="img-fluid" alt="code">
-                <h2>
-                    RPG Game
-                </h2>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <img class="work" src="assets/imgs/trivia.jpg" alt="Trivia" />
+              <h3>Trivia Game</h3>
             </div>
-            <div class="col-lg-6 col-sm-12">
-                <img src="assets/images/specs.jpg" class="img-fluid" alt="specs">
-                <h2>
-                    Rutgers Info Widget
-                </h2>
+            <br>
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <img class="work" src="assets/imgs/specs.jpg" alt="Rutgers Info Widget" />
+              <h3>Rutgers Info Widget</h3>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 col-sm-12">
-                <img src="assets/images/trivia.jpg" class="img-fluid" alt="trivia">
-                <h2>
-                    Trivia Game
-                </h2>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-sm-6 col-md-12 col-lg-6">
+              <img class="work" src="assets/imgs/rps.jpg" alt="rock paper scissors" />
+              <h3>Rock Paper Scissors</h3>
             </div>
-            <div class="col-lg-6 col-sm-12">
-                <img src="assets/images/words.jpeg" class="img-fluid" alt="words">
-                <h2>
-                    Word Guess
-                </h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <img src="assets/images/rps.jpg" class="img-fluid" alt="rock paper scissors">
-                <h2>
-                    Rock Paper Scissors
-                </h2>
-            </div>
-        </div>
+          </div>
+        </article>
+      </div>
+    </main>
+  </div>
+  <!-- End of container -->
+
+  <!-- Start of footer -->
+  <footer class="footer">
+    <div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+      &copy; Copyright 2020 Kilea Castillo
+    </p>
+  </footer>
+  <!-- End of footer -->
+
+  <!-- jQuery CDN -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Bootstrap CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
+
 </html>
